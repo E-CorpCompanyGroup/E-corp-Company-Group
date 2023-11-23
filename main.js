@@ -9,11 +9,6 @@ let PRODUCTS=document.querySelector('.products');
 let DROPDOWNMENU=document.querySelector('.dropdownmenu');
 
 
-
-
-
-
-
 HEADER.innerHTML=headerData;
 HERO.innerHTML=heroData;
 ATTRIBUTES.innerHTML=ourattributesData;
@@ -38,7 +33,7 @@ function ourproducts() {
 /*----------------------------------------------------------------------*/
 function drodownopen(){
     let dropdown=document.querySelector('.dropdownmenu');
-    dropdown.style.height=60+"%";
+    dropdown.style.height=50+"%";
 
     let menuicon=document.querySelector('#menu-icon');
     menuicon.style.display="none";
