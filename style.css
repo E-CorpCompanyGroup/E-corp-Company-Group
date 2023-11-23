@@ -831,13 +831,13 @@ a, .install-icons{
 	overflow: hidden;
 	margin-top: 15px;
 	border-radius: 4px;
-	background-color: #d2d2d2;
+	background-color: #1a4775;
 }
 .content{
     display: block;
     width: 100%;
 	font-size: 15px;
-	color: #074973;
+	color: #ffffff;
     text-align: center;
     margin-top: 10px;
 }
