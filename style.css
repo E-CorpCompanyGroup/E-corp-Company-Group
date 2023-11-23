@@ -1,0 +1,843 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    transition: 2s;
+}
+body{
+    position: fixed;
+    background-color: transparent;
+}
+div{
+    width: 100%;
+    background-color: #1a4775;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+header{
+    width: 90%;
+    height: 50px;
+    background-color: #87ceeb95;
+    position: fixed;
+    left: 5%;
+    top: 15px;
+    border-radius: 50px;
+    display: inline-flex;
+}
+#logo-icon{
+    width: 60px;
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 6px;
+}
+.homeheader{
+    width: 70%;
+    position: relative;
+    background-color: transparent;
+    height: 45px;
+    margin-left: 22%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-flex;
+}
+.homeheader ul{
+    display: inline-flex;
+}
+.homeheader ul li{
+    margin-left: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.homeheader ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	display: block;
+	transition:0.5s;
+	margin: auto;
+	background: #1a4775;
+}
+.homeheader ul li:hover::after{
+	width: 45px;
+}
+.homeheader ul li a{
+	color: #1a4775;
+    font-weight: bold;
+	
+}
+.homeheader ul li a:hover{
+	color: white;
+}
+
+#menu-icon, #menu-icon2{
+    display: none;
+}
+
+@media all and (max-width: 800px){
+    #menu-icon{
+		display: block;
+		position: fixed;
+		right: 40px;
+		width: 32px;
+		top: 23px;
+	}
+    #menu-icon2{
+        display: none;
+		position: fixed;
+		right: 40px;
+		width: 32px;
+		top: 23px;
+    }
+    .homeheader ul{
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.hero{
+   background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/mancoding.jpg");
+   height: 500px;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   margin: 0 auto;
+}
+#company-name{
+    position: relative;
+    margin-top: 190px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+#slogan{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+@media all and (max-width: 800px){
+    #company-name{
+        margin-top: 160px;
+        font-size: 40px;
+    }
+    #slogan{
+        font-size: 17px;
+        margin-top: 40px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------*/
+.our-attributes{
+    width: 85%;
+    left: 7.5%;
+    margin-top: -100px;
+    top: -35px;
+    background-color: transparent;
+    height: 250px;
+    position: relative;
+    display: inline-flex;
+}
+.aim, .mission, .vision{
+    width: 31%;
+    background-color: skyblue;
+    height: 250px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+#attribute-theme{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    color: #1a4775;
+}
+#attribute-texts{
+    position: relative;
+    margin-top: 30px;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    color: #1a4775;
+}
+
+@media all and (max-width: 800px){
+    .our-attributes{
+        margin-top: -90px;
+        top: -5px;
+        height: auto;
+        position: relative;
+        display: block;
+    }
+    .aim, .mission, .vision{
+        width: 100%;
+        height: 170px;
+        margin-bottom: 5px;
+    }
+    #attribute-theme{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    #attribute-texts{
+        position: relative;
+        margin-top: 15px;
+        width: 90%;
+        left: 5%;
+        text-align: center;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+.services{
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 80px;
+    margin-top: -30px;
+}
+.services-wrapper{
+    width: 90%;
+    position: relative;
+    background-color: transparent;
+    left: 5%;
+    height: auto;
+    margin-top: 75px;
+}
+.service-theme{
+    color: white;
+}
+#service-text{
+    position: relative;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 80%;
+    left: 10%;
+    color: white;
+}
+#gigworld-link{
+    font-weight: bold;
+    color: skyblue;
+}
+.services-table{
+    position: relative;
+    width: 90%;
+    margin-top: 15px;
+    background-color: lightcoral;
+    height: 300px;
+    display: inline;
+}
+table{
+	margin-top: 20px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+td{
+	width: auto;
+	color: white;
+	background-color: transparent;
+	padding: 5%;
+	font-size: 18px;
+	text-align: center;
+}
+#websites{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/appdev.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#apps{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/mancoding.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#music{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/musicproduction.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#graphics{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/graphicdesign.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#arts{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/artandcraft.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+@media all and (max-width: 800px){
+    .services{
+        width: 100%;
+        margin-top: 0;
+    }
+    .services-wrapper{
+        width: 100%;
+        left: 0;
+    }
+    table{
+        margin-top: 30px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    td{
+        background-color: #f3f3f3;
+        padding: 5%;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+.achievements{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 170px;
+	background-color: transparent;
+	display: inline-flex;
+    margin-bottom: 70px;
+}
+#achieve{
+	position: relative;
+	top: 0;
+	background-color: #87ceeb80;
+	color: white;
+}
+.achieve-icons{
+    width: 40px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 135px;
+}
+#para2{
+	margin-top: 85px;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 7px;
+	text-align: center;
+}
+#text1{
+	text-align: center;
+}
+
+@media all and (max-width: 800px){
+    #para2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    #text1{
+        font-size: 13px;
+    }
+    .achieve-icons{
+        width: 35px;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 26px;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+.footer{
+    position: relative;
+    background-color: skyblue;
+    height: 70px;
+    margin-bottom: 0;
+    bottom: 0;
+}
+#contact-wrapper{
+	position: relative;
+	top: 0;
+	background-color: transparent;
+	margin-top: 20px;
+	display: inline-flex;
+	width: 100%;
+}
+#icon{
+	position: relative;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*------------------------------------------------------------------------------------*/
+.aboutus{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #1a4775;
+    display: none;
+}
+#back-icon{
+    width: 27px;
+    position: fixed;
+    margin-top: 17px;
+    left: 3%;
+    background-color: #1d1d1d70;
+    padding: 10px;
+    border-radius: 50px;
+}
+.about-nav{
+    position: fixed;
+    margin-top: 15px;
+    width: 70%;
+    height: 50px;
+    background-color: #87ceeb;
+    right: 0;
+    border-radius: 50px 0px 0px 50px;
+    display: inline-flex;
+}
+#aboutus-theme{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #1a4775;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.aboutus-container{
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+    top: 65.5px;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#aboutus-wrapper1{
+	position: relative;
+	top: 0;
+	margin-top: 15px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	background-color: transparent;
+	margin-bottom: 30px;
+	color: white;
+}
+#what-are-we{
+	position: relative;
+	top: 0;
+	color: skyblue;
+	font-size: 18px;
+}
+.aboutus-wrapper2{
+	position: relative;
+	top: 0;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid skyblue;
+	border-radius: 10px;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+#inner-wrapper{
+	position: relative;
+	top: 0;
+	background-color: transparent;
+	padding: 20px 0px;
+}
+#advertising-content, #appdev-content{
+	position: relative;
+	width: 90%;
+	height: auto;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	background-color: transparent;
+	color: white;
+}
+h4{
+	color: skyblue;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+#content-wrapper3{
+	position: relative;
+	background-color: transparent;
+	top: 0;
+	margin-bottom: 40px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+#history{
+	color: skyblue;
+	margin-left: 50px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.companies-container{
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 30px;
+}
+.companies-theme{
+    position: relative;
+    width: 45%;
+    height: 50px;
+    background-color: skyblue;
+    left: 0;
+    border-radius: 0px 50px 50px 0px;
+    display: inline-flex;
+}
+#companies-theme{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1a4775;
+    font-size: 18px;
+}
+#companies-intro{
+    background-color: transparent;
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+}
+.companies-invloved{
+    width: 95%;
+    position: relative;
+    background-color: transparent;
+    left: 5%;
+    height: auto;
+    margin-top: 30px;
+    display: inline-flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.companies{
+    width: 200px;
+    flex-shrink: 0;
+    height: 150px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: none;
+    border-radius: 10px 0px 10px 0px;
+    background-image: url("/pics/mancoding.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.companies:hover{
+    width: 300px;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/mancoding.jpg");
+    font-size: 25px;
+}
+#ero-industries{
+    background-image: url("/pics/eroindustries.jpg");
+}
+#ero-industries:hover{
+    width: 300px;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/eroindustries.jpg");
+    font-size: 25px;
+}
+#movielander-company{
+    background-image: url("/pics/movielander.jpg");
+}
+#movielander-company:hover{
+    width: 300px;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/movielander.jpg");
+    font-size: 25px;
+}
+#nibermusic-company{
+    background-image: url("/pics/nibermusic.jpg");
+}
+#nibermusic-company:hover{
+    width: 300px;
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/nibermusic.jpg");
+    font-size: 25px;
+}
+
+@media all and (max-width: 800px){
+    .about-nav{
+        position: fixed;
+        margin-top: 15px;
+        width: 80%;
+        height: 50px;
+        right: 0;
+        border-radius: 50px 0px 0px 50px;
+        display: inline-flex;
+    }
+    #aboutus-theme{
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10%;
+        font-size: 17px;
+    }
+    .companies-theme{
+        position: relative;
+        width: 85%;
+        height: 50px;
+        left: 0;
+        border-radius: 0px 50px 50px 0px;
+        display: inline-flex;
+    }
+    #companies-theme{
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+    #companies-intro{
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .companies-invloved{
+        width: 98%;
+        left: 2%;
+    }
+    .companies{
+        width: 130px;
+        height: 100px;
+    }
+    .companies:hover{
+        width: 200px;
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/mancoding.jpg");
+        font-size: 20px;
+    }
+    #ero-industries:hover{
+        width: 200px;
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/eroindustries.jpg");
+        font-size: 20px;
+    }
+    #movielander-company:hover{
+        width: 200px;
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/movielander.jpg");
+        font-size: 20px;
+    }
+    #nibermusic-company:hover{
+        width: 200px;
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/pics/nibermusic.jpg");
+        font-size: 20px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.products{
+    width: 100%;
+    position: fixed;
+    display: none;
+    background-color: #1a4775;
+}
+.products-container{
+    background-color: transparent;
+	position: fixed;
+	width: 100%;
+    top: 65.5px;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#products-description{
+    position: relative;
+	top: 0;
+	background-color: transparent;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: white;
+}
+.apps-wrapper{
+    width: 90%;
+    position: relative;
+    background-color: transparent;
+    margin-top: 20px;
+    height: 500px;
+    margin-left: 5%;
+    border-radius: 10px;
+    border: skyblue 3px solid;
+    margin-bottom: 30px;
+}
+.movielander-container{
+    position: relative;
+    background-color: transparent;
+    width: 90%;
+    height: 200px;
+    left: 5%;
+    margin-top: 40px;
+}
+#movielander-img{
+    position: absolute;
+    width: 200px;
+    border-radius: 7px;
+}
+.app-info{
+    width: 95%;
+    position: absolute;
+    height: 100px;
+    background-color: transparent;
+    left: 19.5%;
+    margin-top: 30px;
+}
+.appname-container{
+    position: relative;
+    width: 30%;
+    background-color: skyblue;
+    height: 40px;
+    border-radius: 0px 50px 50px 0px;
+    display: inline-flex;
+}
+#app-name{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    letter-spacing: 0.5px;
+    color: #1a4775;
+}
+#app-details{
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: white;
+}
+.download-icons{
+    position: absolute;
+    background-color: transparent;
+    display: inline-flex;
+    width: 10%;
+    height: 35px;
+    left: 240px;
+    margin-top: 165px;
+}
+a, .install-icons{
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media all and (max-width: 800px){
+    #products-description{
+        width: 95%;
+    }
+    .apps-wrapper{
+        width: 95%;
+        margin-top: 20px;
+        margin-left: 2%;
+    }
+    .movielander-container{
+        width: 95%;
+        left: 2.5%;
+        margin-top: 10px;
+    }
+    #movielander-img{
+        width: 130px;
+    }
+    .app-info{
+        width: 60%;
+        position: absolute;
+        height: auto;
+        left: 40%;
+        top: -20px;
+    }
+    .appname-container{
+        position: relative;
+        width: 95%;
+        height: 30px;
+        border-radius: 0px 50px 50px 0px;
+        display: inline-flex;
+    }
+    #app-name{
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        letter-spacing: 0.5px;
+    }
+    #app-name{
+        position: relative;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #app-details{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 7px;
+    }
+    .download-icons{
+        position: absolute;
+        display: inline-flex;
+        width: 30%;
+        height: 35px;
+        left: 15px;
+        margin-top: 135px;
+    }
+}
+
+/*-----------------------------------dropdown------------------------------------------------*/
+.dropdownmenu{
+    top: 64.5px;
+	width: 55%;
+	height: 0%;
+	background-color: #0067a8;
+	position: fixed;
+	right: 35px;
+	border-radius: 3px 3px 7px 7px;
+}
+.dropdown-content{
+	top: 0;
+	position: relative;
+	width: 90%;
+    left: 5%;
+	height: 35px;
+	overflow: hidden;
+	margin-top: 15px;
+	border-radius: 4px;
+	background-color: #d2d2d2;
+}
+.content{
+    display: block;
+    width: 100%;
+	font-size: 15px;
+	color: #074973;
+    text-align: center;
+    margin-top: 10px;
+}
