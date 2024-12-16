@@ -95,8 +95,8 @@
 const MODULED=(PATH,MODULE_NAME,callback)=>{import(PATH).then(module=>{callback(module[MODULE_NAME])}).catch(error=>{console.error('Error importing module:',error)})};
 const ROUTECSS=(DATA)=>{const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 const ROUTEJS=(DATA)=>{ const styleElement = document.createElement("script"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
-localStorage.setItem('Environment','Test');
-const NAME='6145e720-f598-46fa-bd8b-0fbb9f2ff71e';
+localStorage.setItem('Environment','Web');
+const NAME='cf9c9867-b878-4a0c-bcb8-0e4e84c2e682';
 ROUTEJS(localStorage.getItem('Advance'));
 const Reload=()=>{
     if (localStorage.getItem('Environment')==='Production') {
