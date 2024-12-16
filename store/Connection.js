@@ -35,8 +35,6 @@ ROUTEJS(localStorage.getItem('JsonFour'));
 ROUTEJS(localStorage.getItem('JsonFive'));
 ROUTEJS(localStorage.getItem('AppCredits'));
 ROUTEJS(localStorage.getItem('AppVersion'));
-ROUTEJS(localStorage.getItem('AppJson'));
-ROUTEJS(localStorage.getItem('AppDetails'));
 ROUTEJS(localStorage.getItem('Assets'));
 ROUTEJS(localStorage.getItem('Icons'));
 ROUTEJS(localStorage.getItem('SpecialFunctions'));
@@ -222,4 +220,4 @@ export const APPLOAD=()=>{
             
         `;
     });   
-};
+}
