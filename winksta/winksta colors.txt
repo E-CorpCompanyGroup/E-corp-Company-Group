@@ -1,0 +1,4 @@
+Pink - #dfa4c7
+Blue - #a8d2df
+Purple - #8f7bb4
+dark Purple - #292435

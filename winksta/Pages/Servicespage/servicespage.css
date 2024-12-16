@@ -1,0 +1,119 @@
+.services-page{
+    position: fixed;
+    background-color: #292435;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.services-intro-holder{
+    position: relative;
+    margin-top: 100px;
+    width: 90%;
+    left: 5%;
+    height: auto;
+    background-color: transparent;
+}
+.services-wrapper{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: transparent;
+    display: inline-flex;
+}
+.artandcrafts{
+    position: relative;
+    background-color: transparent;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.graphic-services{
+    position: relative;
+    background-color: transparent;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rep-icon-holder{
+    background-color: #dfa4c795;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: inline-flex;
+    position: relative;
+}
+#rep-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.services-details{
+    width: 85%;
+    position: absolute;
+    height: 250px;
+    background-color: #8f7bb4;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 0px 10px 10px 10px;
+}
+#service-title{
+    position: absolute;
+    margin-top: 110px;
+    rotate: 270deg;
+    margin-left: -25px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+#service-title2{
+    position: absolute;
+    margin-top: 110px;
+    rotate: 270deg;
+    margin-left: -39px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+#horizontal-line{
+    position: absolute;
+    rotate: 90deg;
+    width: 230px;
+    margin-left: -40px;
+    margin-top: 155px;
+}
+.services-offered{
+    width: 80%;
+    position: relative;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 15%;
+    background-color: transparent;
+}
+ul li{
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 15px;
+}
+ul li::before{
+    content: '*';
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+#services2products-txt{
+    position: relative;
+    margin-top: 20px;
+    left: 5%;
+}
+#click-here{
+    color: green;
+    font-weight: bolder;
+}

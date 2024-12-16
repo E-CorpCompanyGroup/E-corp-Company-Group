@@ -1,0 +1,120 @@
+.about-page{
+    position: fixed;
+    background-color: #292435;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.backbtn-container{
+    background-color: #8f7bb4;
+    width: 153px;
+    height: 50px;
+    position: fixed;
+    border-radius: 0px 50px 50px 0px;
+    display: inline-flex;
+    top: 20px;
+    left: 0;
+}
+#backbtn{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------------------*/
+.about-winksta{
+    width: 85%;
+    left: 7.5%;
+    background-color: transparent;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+    display: inline-flex;
+}
+.logo-holder{
+    width: 250px;
+    height: auto;
+    position: relative;
+    background-color: transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#logo-abt-page{
+    width: 100%;
+    height: auto;
+}
+#welcome-theme{
+    text-align: right;
+    border-bottom: 3px solid #dfa4c7;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: #a8d2df;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#showcases{
+    color: green;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.bio-container{
+    width: 85%;
+    left: 7.5%;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    margin-top: 100px;
+    display: inline-flex;
+}
+.name-holder{
+    position: relative;
+    width: 250px;
+    height: auto;
+    background-color: transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#myname{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.bio-text{
+    position: relative;
+    width: 73%;
+    height: auto;
+    background-color: transparent;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.bio-pics{
+    width: 85%;
+    left: 7.5%;
+    height: 400px;
+    position: relative;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: inline-flex;
+}
+#bio-image1{
+    width: 30%;
+    position: relative;
+    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 5px solid #8f7bb4;
+}
+#picture1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
