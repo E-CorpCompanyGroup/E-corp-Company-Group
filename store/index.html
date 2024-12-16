@@ -96,7 +96,7 @@ const MODULED=(PATH,MODULE_NAME,callback)=>{import(PATH).then(module=>{callback(
 const ROUTECSS=(DATA)=>{const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 const ROUTEJS=(DATA)=>{ const styleElement = document.createElement("script"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 localStorage.setItem('Environment','Web');
-const NAME='cf9c9867-b878-4a0c-bcb8-0e4e84c2e682';
+const NAME='9e24b827-9556-4f8f-baf9-13690c819556';
 ROUTEJS(localStorage.getItem('Advance'));
 const Reload=()=>{
     if (localStorage.getItem('Environment')==='Production') {
