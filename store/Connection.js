@@ -51,7 +51,7 @@ export const APPLOAD=()=>{
     .then(res=>res.json())
     .then(data =>{
         data.forEach(element => {
-            if (element.ID === NAME ) {
+            if (element.ID === NAME && !element.AppCredits) {
                 localStorage.setItem('ID',element.ID);
                 localStorage.setItem('ProjectName',element.ProjectName);
                 localStorage.setItem('AppFunctions',element.Functions);
@@ -186,7 +186,7 @@ export const APPLOAD=()=>{
                     `;
                  
                 });  
-            }; 
+            }
         }); 
     })
     .catch(error=>{
