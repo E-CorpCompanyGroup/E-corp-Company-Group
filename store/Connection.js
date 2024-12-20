@@ -44,7 +44,6 @@ ROUTECSS(localStorage.getItem('SpecialStyles'));
 ROUTEJS(localStorage.getItem('MyAssets'));`;
 
 export const APPLOAD=()=>{
-    localStorage.setItem("Advance",MYROUTEDATA);
     fetch('https://script.google.com/macros/s/AKfycby5S_I3_hu6iEB0n8I7cmFZ9liA1kGPpQ-9ewmTcJmkUuMCYY540oaGDwJGE4ADs6tv5w/exec',{
         method:"Post",mode:"cors",body:JSON.stringify({"spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1kd15tCp1cX6TIUSsm3GcrfxDvOrmqlTNxAaseR8LBhw/edit?gid=0#gid=0","sheetName":"AppManager"})
     })
@@ -52,6 +51,7 @@ export const APPLOAD=()=>{
     .then(data =>{
         data.forEach(element => {
             if (element.ID === NAME && !element.AppCredits) {
+                localStorage.setItem("Advance",MYROUTEDATA);
                 localStorage.setItem('ID',element.ID);
                 localStorage.setItem('ProjectName',element.ProjectName);
                 localStorage.setItem('AppFunctions',element.Functions);
