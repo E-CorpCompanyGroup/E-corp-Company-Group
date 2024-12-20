@@ -33,7 +33,6 @@ ROUTEJS(localStorage.getItem('JsonTwo'));
 ROUTEJS(localStorage.getItem('JsonThree'));
 ROUTEJS(localStorage.getItem('JsonFour'));
 ROUTEJS(localStorage.getItem('JsonFive'));
-ROUTEJS(localStorage.getItem('AppCredits'));
 ROUTEJS(localStorage.getItem('AppVersion'));
 ROUTEJS(localStorage.getItem('Assets'));
 ROUTEJS(localStorage.getItem('Icons'));
