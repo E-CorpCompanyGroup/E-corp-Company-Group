@@ -1,4 +1,5 @@
-const MYROUTEDATA=`ROUTECSS(localStorage.getItem('Styles'));
+const MYROUTEDATA=`ROUTECSS(localStorage.getItem('Advance'));
+ROUTECSS(localStorage.getItem('Styles'));
 ROUTECSS(localStorage.getItem('AppStyles'));
 ROUTECSS(localStorage.getItem('Classes'));
 ROUTECSS(localStorage.getItem('CloudStyles'));
